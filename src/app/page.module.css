@@ -1,36 +1,3 @@
-.navbar {
-  padding: 1rem 0;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  border-bottom: 0.3rem solid #292E3D;
-  border-radius: 0.1rem;
-}
-
-.sections {
-  list-style: none;
-  margin: 1rem;
-  padding: 0;
-  display: flex;
-  float: right; 
-}
-
-.item {
-  margin-left: 1.5rem;
-}
-
-.logo {
-  list-style: none;
-  margin: 1rem;
-  padding: 0;
-  display: flex;
-  float: left; 
-}
-
 /* Mobile */
 @media (max-width: 700px) {
 

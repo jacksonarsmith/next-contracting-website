@@ -7,11 +7,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: #292E3D;
-  background: linear-gradient(to bottom, #F6F8F7, #F6F8F7);
+  background-color: #F6F8F7;
+  color: #EF820D;
 }
 
 a {
