@@ -6,10 +6,12 @@
     place-items: center;
     place-content: center;
     display: grid;
+    box-shadow: inset 0 4px 16px rgba(239, 130, 13, 0.7);
+    padding: 4rem 0;
 }
 
 .section h2 {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 700px;
 }
 
@@ -20,7 +22,7 @@
     border-radius: 4rem;
     font-size: 18px;
     color: #FFFFFF;
-    box-shadow: 0 0 0.5rem #292E3D;
+    
 }
 
 .section button:hover {
@@ -72,7 +74,7 @@
     align-items: center;
     gap: 5rem;
     display: inline;
-    color: #292E3D; 
+    color: #EF820D; 
     font-size: 20px;
 }
 

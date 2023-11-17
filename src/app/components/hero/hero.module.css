@@ -1,9 +1,9 @@
 .container {
+    background-color: #DCE0DF;
     padding: 4rem 10rem 4rem 10rem;
     align-items: center;
     justify-content: center;
     display: flex;
-    border-radius: 0 0 2rem 2rem;
 }
 
 .image {

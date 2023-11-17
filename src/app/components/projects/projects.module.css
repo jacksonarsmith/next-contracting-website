@@ -1,0 +1,71 @@
+.container {
+    padding: 4rem 2rem;
+    background-color: #DCE0DF;
+    place-items: center;
+    place-content: center;
+    display: grid;
+}
+
+.container h2 {
+    color: #292E3D;
+    font-size: 60px;
+    font-weight: 700px; 
+}
+
+.container li {
+    padding: 1rem 1rem;
+    background-color: #292E3D;
+    font-size: 24px;
+    list-style: none;
+    transition: opacity 0.3s ease-in-out; 
+    box-shadow: 0 0 1rem #292E3D;
+    border-radius: 1rem;
+}
+
+.container li:hover {
+    opacity: 0.8; /* Set opacity directly, no need for percentage */
+    cursor: pointer;
+}
+
+.choices ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 1rem;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.services {
+    margin: 2rem 0;
+}
+
+.item {
+    transition: background-color 0.3s ease-in-out;
+    padding: 0.5rem 0;
+}
+
+.item.selected {
+    background-color: #EF820D; /* Selected background color */
+    animation: selectedAnimation 0.5s ease-in-out forwards; /* Keyframe animation for selected item */
+}
+
+.button {
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.icon {
+    padding: 1rem;
+    color: #292E3D;
+    height: 30%;
+    width: 30%;
+}
