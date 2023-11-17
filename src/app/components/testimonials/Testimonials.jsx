@@ -2,7 +2,7 @@ import styles from '@/app/components/testimonials/testimonials.module.css'
 
 function Testimonials() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='testimonials'>
       <h2>Testimonials</h2>
       <ul className={styles.testimonials}>
         <li className={styles.testimonial}>

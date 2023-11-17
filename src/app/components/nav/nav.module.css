@@ -5,8 +5,7 @@
   align-items: center;
   padding: 0 2rem;
   color: #292E3D;
-  border-bottom: 2rem;
-  box-shadow: inset 0 4px 16px rgba(239, 130, 13, 0.7);
+  border-bottom: 2px solid #EF820D;
 }
 
 .sections {
@@ -18,7 +17,7 @@
 }
 
 .item {
-  margin-left: 1.5rem;
+  padding-left: 2rem;
   font-size: 24px;
 }
 

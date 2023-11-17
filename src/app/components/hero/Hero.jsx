@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Hero() {
   return (
     
-    <div className={styles.container}>
+    <div className={styles.container} id='about'>
       <Image src={"/tophead.jpg"} alt='Hero picture' width={902} height={668} className={styles.image}/>
       <div className={styles.block}>
         <h2>About us</h2>

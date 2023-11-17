@@ -38,7 +38,7 @@ function Projects() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='projects'>
       <h2>Project Gallery</h2>
       <div className={styles.choices}>
         <ul className={styles.services}>

@@ -5,7 +5,7 @@ import { faHouseChimney, faBathtub, faKitchenSet, faHammer, faTrowelBricks, faBu
 
 function Services() {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id='services'>
       <h2>Services</h2>
       <div className={styles.container}>
         <div className={styles.card_light}>
