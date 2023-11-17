@@ -6,7 +6,7 @@
     place-items: center;
     place-content: center;
     display: grid;
-    box-shadow: inset 0 4px 16px rgba(239, 130, 13, 0.7);
+    box-shadow: inset 0 0 16px rgba(239, 130, 13, 0.7);
     padding: 4rem 0;
 }
 
