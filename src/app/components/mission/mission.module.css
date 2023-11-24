@@ -1,0 +1,22 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    height: 85vh;
+    width: 100vw;
+    border-bottom: 0.2rem solid var(--primary-button-color);
+    opacity: 80%;
+}
+
+.overlay {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--primary-background-color);
+    border-radius: 0.5rem;
+}

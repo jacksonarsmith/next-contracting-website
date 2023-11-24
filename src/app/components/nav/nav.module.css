@@ -1,11 +1,11 @@
 .container {
-  background-color: #F6F8F7;
+  background-color: var(--secondary-background-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  color: #292E3D;
-  border-bottom: 2px solid #EF820D;
+  color: var(--primary-text-color);
+  border-bottom: 2px solid var(--primary-button-color);
 }
 
 .sections {
@@ -22,7 +22,7 @@
 }
 
 .item:hover {
-  color: #EF820D; /* Change the color on hover */
+  color: var(--primary-button-color); /* Change the color on hover */
 }
 
 .logo {

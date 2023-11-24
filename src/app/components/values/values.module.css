@@ -1,0 +1,123 @@
+.section {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    background-color: var(--secondary-background-color);
+    place-items: center;
+    place-content: center;
+    display: grid;
+    box-shadow: inset 0 0 16px rgba(239, 130, 13, 0.7);
+    padding: 4rem 0;
+}
+
+.section h2 {
+    font-size: 60px;
+    font-weight: 700px;
+}
+
+.container {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.line_light {
+    margin: 1rem;
+    height: 2px; 
+    background-color: #FFFFFF;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.line_dark {
+    margin: 1rem;
+    height: 2px; 
+    background-color: var(--primary-text-color);
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_light {
+    margin: 2rem 2rem;
+    width: 271px;
+    height: 181px;
+    padding: 2rem;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(239, 130, 13, 0.7);
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    display: inline;
+    color: var(--primary-button-color); 
+    font-size: 20px;
+}
+
+
+
+.icon_light {
+    color: #FFFFFF;
+    height: 40%;
+    width: 40%;
+}
+
+.icon_dark {
+    color: var(--primary-text-color);
+    height: 40%;
+    width: 40%;
+}
+
+.flip_card {
+    perspective: 1000px;
+    width: 20vw; /* Set the width of the flip card */
+    height: 25vh; /* Set the height of the flip card */
+    padding: 0 5rem;
+}
+  
+.flip_card_inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+  
+.flip_card.flipped .flip_card_inner {
+    transform: rotateY(180deg);
+}
+  
+.flip_card_front, .flip_card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+}
+  
+.flip_card_front {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flip_card_back {
+    background-color: var(--primary-text-color); 
+    color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}

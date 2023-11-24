@@ -47,7 +47,7 @@ function Projects() {
               key={index}
               className={styles.item}
               style={{
-                color: selectedItem === index ? '#EF820D' : '#F6F8F7',
+                color: selectedItem === index ? 'var(--primary-button-color)' : 'var(--secondary-background-color)',
               }}
               onClick={() => handleItemClick(index)}
             >

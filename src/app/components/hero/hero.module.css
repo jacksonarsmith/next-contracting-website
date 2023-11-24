@@ -1,5 +1,5 @@
 .container {
-    background-color: #DCE0DF;
+    background-color: var(--primary-background-color);
     padding: 4rem 10rem 4rem 10rem;
     align-items: center;
     justify-content: center;
@@ -9,10 +9,13 @@
 .image {
     margin-top: 2rem;
     position: relative;
+    width: 70vw;
+    height: 50vh;
+    border-radius: 0.5rem;
 }
 
 .block {
-    color: #292E3D;
+    color: var(--primary-text-color);
     padding: 0.5rem; 
     position: relative; 
     border-radius: 2rem;

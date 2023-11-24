@@ -1,3 +1,10 @@
+:root {
+    --primary-background-color: #DCE0DF;
+    --secondary-background-color: #F6F8F7;
+    --primary-text-color: #292E3D;
+    --primary-button-color: #EF820D; 
+}
+
 * {
   padding: 0;
   margin: 0;

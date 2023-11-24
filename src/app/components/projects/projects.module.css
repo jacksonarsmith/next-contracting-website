@@ -1,24 +1,24 @@
 .container {
     padding: 4rem 2rem;
-    background-color: #DCE0DF;
+    background-color: var(--primary-background-color);
     place-items: center;
     place-content: center;
     display: grid;
 }
 
 .container h2 {
-    color: #292E3D;
+    color: var(--primary-text-color);
     font-size: 60px;
     font-weight: 700px; 
 }
 
 .container li {
     padding: 1rem 1rem;
-    background-color: #292E3D;
+    background-color: var(--primary-text-color);
     font-size: 24px;
     list-style: none;
     transition: opacity 0.3s ease-in-out; 
-    box-shadow: 0 0 1rem #292E3D;
+    box-shadow: 0 0 1rem var(--primary-text-color);
     border-radius: 1rem;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .item.selected {
-    background-color: #EF820D; /* Selected background color */
+    background-color: var(--primary-button-color); /* Selected background color */
     animation: selectedAnimation 0.5s ease-in-out forwards; /* Keyframe animation for selected item */
 }
 
@@ -66,7 +66,7 @@
 
 .icon {
     padding: 1rem;
-    color: #292E3D;
+    color: var(--primary-text-color);
     height: 30%;
     width: 30%;
 }
