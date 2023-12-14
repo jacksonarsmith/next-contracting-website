@@ -1,47 +1,145 @@
 .container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
-.heading {
-    padding: 1rem;
-    background-color: var(--secondary-background-color);
-    border-radius: 0.5rem;
-    
+.container h1 {
+    font-size: 60px;
+    font-weight: 700;
 }
 
-.services {
-    list-style: none;
-    margin: 1rem 0;
+.gridContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    /* Add styles for the quote div here */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 16px var(--primary-color);
+    padding: 2rem;
+    margin: 0 2rem;
+    height: 5vh;
+}
+
+.quote p {
+    font-size: 36px;
+    font-weight: 700px;
+}
+
+.content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20rem;
-    color: var(--secondary-background-color);
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr); /* Update this line */
 }
 
 .service {
-    list-style: none;
-    background-color: var(--primary-text-color);
-    border-radius: 0.5rem;
-    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0 0 16px var(--primary-color);
 }
 
-.service_types {
-    list-style: none;
+.serviceTitle {
+    font-size: 36px;
+    font-weight: 700px;
 }
 
-.image {
-    height: 90vh;
-    width: 100vw;
-    border-bottom: 0.2rem solid var(--primary-button-color);
-    opacity: 80%;
+.services {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    width: 45vw;
+    box-shadow: 0 0 16px var(--primary-color);
 }
 
-.overlay {
-    padding: 1rem;
-    transform: translate(0%, -200%);
-    text-align: center;
+.services h2 {
+    font-size: 36px;
+    font-weight: 700px;
+    padding: 2rem;
+
+}
+
+.services p, .services ul {
+    padding: 2rem;
+    font-size: 20px;
+}
+
+.services ul {
+    list-style-type: square;
+}
+
+.services ul li {
+    margin: 0.5rem;
+}
+
+.interior {
+    display: flex;
+}
+
+.interior h2, .exterior h2 {
+    font-size: 24px;
+}
+
+.interior ul {
+    padding: 2rem;
+}
+
+.exterior {
+    display: flex;
+}
+
+.exterior ul {
+    padding: 2rem;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.imageContainer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.imageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover::before {
+    opacity: 1;
+}
+
+.serviceName {
+    color: var(--secondary-text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.imageContainer:hover .serviceName {
+    opacity: 1;
+}
+
+.line {
+    height: 0.5vh;
+    width: 25vw;
+    background-color: var(--tertiary-color);
+    margin-left: 1rem;
 }

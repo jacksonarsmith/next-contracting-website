@@ -1,19 +1,45 @@
 import styles from '@/app/components/contact/contact.module.css'
+import { useState } from 'react';
 
-function Contact() {
+const Contact = () => {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleInputChange = (event) => {
+    setFormState({
+      ...formState,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission here
+    console.log(formState);
+  };
+
   return (
-    <div className={styles.container} id='contact'>
-      <h2>Contact Us</h2>
-      <div className={styles.form}>
-        <input type='text' placeholder='Enter Name'/>
-        <input type='email' placeholder='Enter Email'/>
-        <input type='text' placeholder='Enter Phone Number'/>
-        <input type='text' placeholder='Service'/>
-      </div>
-      <input type="text" placeholder='Message' className={styles.message}/>
-      <button type='submit'>Submit</button>
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input type="text" name="name" onChange={handleInputChange} />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" onChange={handleInputChange} />
+        </label>
+        <label>
+          Message:
+          <textarea name="message" onChange={handleInputChange} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

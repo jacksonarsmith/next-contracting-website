@@ -24,12 +24,6 @@ function Nav() {
                         <Link href="#services" onClick={() => router.push('services')}>Services</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="#projects" onClick={() => router.push('projects')}>Projects</Link>
-                    </li>
-                    <li className={styles.item}>
-                        <Link href="#testimonials" onClick={() => router.push('testimonials')}>Testimonials</Link>
-                    </li>
-                    <li className={styles.item}>
                         <Link href="#contact" onClick={() => router.push('contact')}>Contact</Link>
                     </li>
                 </ul>

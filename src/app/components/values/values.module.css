@@ -2,12 +2,11 @@
     width: 100%; 
     height: 100%;
     position: relative;
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-background-color);
     place-items: center;
     place-content: center;
     display: grid;
-    box-shadow: inset 0 0 16px rgba(239, 130, 13, 0.7);
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .section h2 {
@@ -26,13 +25,7 @@
 }
 
 .icon_light {
-    color: #FFFFFF;
-    height: 40%;
-    width: 40%;
-}
-
-.icon_dark {
-    color: var(--primary-text-color);
+    color: var(--primary-background-color);
     height: 40%;
     width: 40%;
 }
@@ -42,6 +35,12 @@
     width: 20vw; /* Set the width of the flip card */
     height: 25vh; /* Set the height of the flip card */
     padding: 0 5rem;
+    transition: transform 0.3s ease; /* Add this line */
+}
+
+.flip_card:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Add this line */
 }
   
 .flip_card_inner {
@@ -49,6 +48,8 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    box-shadow: 0 0 16px var(--primary-color);
+    border-radius: 0.5rem;
 }
   
 .flip_card.flipped .flip_card_inner {
@@ -64,8 +65,8 @@
 }
   
 .flip_card_front {
-    background-color: var(--primary-text-color);
-    color: var(--secondary-background-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,8 +74,8 @@
 }
   
 .flip_card_back {
-    background-color: var(--primary-text-color); 
-    color: var(--secondary-background-color);
+    background-color: var(--secondary-color); 
+    color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;

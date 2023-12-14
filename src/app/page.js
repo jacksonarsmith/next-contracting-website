@@ -5,8 +5,6 @@ import Mission from './components/mission/Mission'
 import Hero from './components/hero/Hero'
 import Values from './components/values/Values'
 import Services from './components/services/Services'
-import Projects from './components/projects/Projects'
-import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 
@@ -15,11 +13,9 @@ export default function Home() {
     <div>
       <Nav />
       <Mission />
-      <Hero />
       <Values />
+      <Hero />
       <Services />
-      <Projects />
-      <Contact />
       <Footer />
     </div>
   )
