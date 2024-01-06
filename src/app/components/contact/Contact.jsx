@@ -1,44 +1,48 @@
-import styles from '@/app/components/contact/contact.module.css'
-import { useState } from 'react';
+'use client';
+
+import styles from './contact.module.css'; 
+import { useForm } from 'react-hook-form';
+import { sendEmail } from '../../../../utils/send-mail';
 
 const Contact = () => {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const { register, handleSubmit } = useForm();
 
-  const handleInputChange = (event) => {
-    setFormState({
-      ...formState,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here
-    console.log(formState);
-  };
+  function onSubmit(data) {
+    sendEmail(data);
+  }
 
   return (
-    <div className={styles.container}>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" onChange={handleInputChange} />
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" onChange={handleInputChange} />
-        </label>
-        <label>
-          Message:
-          <textarea name="message" onChange={handleInputChange} />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit(onSubmit)} className={styles.form} id='contact'>
+      <div>
+        <label htmlFor='name'>Full Name:</label>
+        <input
+          type='text'
+          placeholder='Full Name'
+          {...register('name', { required: true })}
+        />
+      </div>
+      <div>
+        <label htmlFor='email'>Email Address:</label>
+        <input
+          type='email'
+          placeholder='example@domain.com'
+          {...register('email', { required: true })}
+        />
+      </div>
+      <div>
+        <label htmlFor='message'>Message</label>
+        <textarea
+          rows={4}
+          placeholder='Type your message'
+          {...register('message', { required: true })}
+        ></textarea>
+      </div>
+      <div>
+        <button>
+          Submit
+        </button>
+      </div>
+    </form>
   );
 };
 

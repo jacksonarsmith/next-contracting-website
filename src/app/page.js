@@ -5,6 +5,7 @@ import Mission from './components/mission/Mission'
 import Hero from './components/hero/Hero'
 import Values from './components/values/Values'
 import Services from './components/services/Services'
+import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Values />
       <Hero />
       <Services />
+      <Contact />
       <Footer />
     </div>
   )
