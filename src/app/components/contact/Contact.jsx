@@ -12,37 +12,41 @@ const Contact = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.form} id='contact'>
-      <div>
-        <label htmlFor='name'>Full Name:</label>
-        <input
-          type='text'
-          placeholder='Full Name'
-          {...register('name', { required: true })}
-        />
-      </div>
-      <div>
-        <label htmlFor='email'>Email Address:</label>
-        <input
-          type='email'
-          placeholder='example@domain.com'
-          {...register('email', { required: true })}
-        />
-      </div>
-      <div>
-        <label htmlFor='message'>Message</label>
-        <textarea
-          rows={4}
-          placeholder='Type your message'
-          {...register('message', { required: true })}
-        ></textarea>
-      </div>
-      <div>
-        <button>
-          Submit
-        </button>
-      </div>
-    </form>
+    <div>
+      <h2 className={styles.heading}>Contact Us</h2>
+      <div className={styles.line}></div>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.form} id='contact'>
+        <div style={{ marginTop: '2rem' }}>
+          <label htmlFor='name'>Full Name:</label>
+          <input
+            type='text'
+            placeholder='Full Name'
+            {...register('name', { required: true })}
+          />
+        </div>
+        <div>
+          <label htmlFor='email'>Email Address:</label>
+          <input
+            type='email'
+            placeholder='example@domain.com'
+            {...register('email', { required: true })}
+          />
+        </div>
+        <div>
+          <label htmlFor='message' style={{ marginBottom: '10px' }}>Message</label>
+          <textarea
+            rows={4}
+            placeholder='Type your message'
+            {...register('message', { required: true })}
+          ></textarea>
+        </div>
+        <div>
+          <button>
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 

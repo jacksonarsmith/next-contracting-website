@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 6rem 0;
 }
 
 .container h1 {
@@ -12,7 +13,8 @@
 
 .gridContent {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2rem 0;
 }
 
 .quote {
@@ -21,14 +23,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 16px var(--primary-color);
+    box-shadow: 0 0 32px var(--shadow);
     padding: 2rem;
-    margin: 0 2rem;
+    margin: 2rem auto 10rem auto;
     height: 5vh;
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive; /* Update this line */
 }
 
-.quote p {
-    font-size: 36px;
+.quote h2 {
+    font-size: 60px;
     font-weight: 700px;
 }
 
@@ -37,11 +40,12 @@
     place-content: center;
     place-items: center;
     grid-template-columns: repeat(3, 1fr); /* Update this line */
+    margin-top: 10rem;
 }
 
 .service {
     margin: 2rem;
-    box-shadow: 0 0 16px var(--primary-color);
+    box-shadow: 0 0 32px var(--shadow);
 }
 
 .serviceTitle {
@@ -49,11 +53,18 @@
     font-weight: 700px;
 }
 
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
 .services {
     color: var(--primary-text-color);
-    background-color: var(--secondary-color);
-    width: 45vw;
-    box-shadow: 0 0 16px var(--primary-color);
+    background-color: var(--primary-color);
+    width: 65vw;
+    box-shadow: 0 0 32px var(--shadow);
 }
 
 .services h2 {
@@ -76,8 +87,10 @@
     margin: 0.5rem;
 }
 
-.interior {
+.interior, .exterior {
     display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .interior h2, .exterior h2 {
@@ -86,10 +99,6 @@
 
 .interior ul {
     padding: 2rem;
-}
-
-.exterior {
-    display: flex;
 }
 
 .exterior ul {
@@ -124,7 +133,7 @@
 }
 
 .serviceName {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -140,6 +149,6 @@
 .line {
     height: 0.5vh;
     width: 25vw;
-    background-color: var(--tertiary-color);
+    background-color: var(--shadow);
     margin-left: 1rem;
 }

@@ -3,20 +3,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 16px var(--secondary-color);
+    gap: 2rem;
+    width: 30vw;
+    margin: 5rem auto 10rem auto;
+    padding: auto;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 32px var(--shadow);
     color: var(--primary-text-color);
+    font-size: 18px;
+    border-radius: 0.5rem;
 }
   
 .form div {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 28vw;
 }
   
   .form div:nth-child(1),
@@ -32,24 +33,66 @@
   
   .form textarea {
     width: 100%;
+    height: 30vh; /* Adjust as needed */
+    margin: 0 auto;
     resize: none;
+    font-size: 18px;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    border-style: groove;
+    border-radius: 0.5rem;
+  }
+
+  .form input {
+    width: 100%;
+    resize: none;
+    font-size: 18px;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    border-style: groove;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+  }
+  
+  .form label {
+    margin-right: 0.5rem; /* Adjust as needed */
   }
   
 .form button {
     width: 18vw; /* adjust as needed */
     height: 5vh; /* full height */
-    color: var(--primary-text-color);
-    background-color: var(--tertiary-color); /* adjust as needed */
-    box-shadow: 0 0 16px var(--secondary-color);
+    color: var(--primary-background-color);
+    background-color: var(--primary-button-color); /* adjust as needed */
+    box-shadow: 0 0 32px var(--shadow);
     font-size: 20px;
     border: none;
     cursor: pointer;
     text-align: center;
     line-height: 5vh;
-    margin: auto; /* add this line */
+    margin: 0 auto 2rem auto; /* add this line */
+    border-radius: 0.5rem;
 }
   
 .form button:hover {
-    background-color: var(--primary-button-color);
-    color: var(--primary-text-color);
+  background-color: var(--primary-button-color);
+  color: var(--secondary-text-color);
+  transform: scale(1.1); /* Adjust as needed */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.5vh;
+  width: 25vw;
+  background-color: var(--shadow);
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
 }

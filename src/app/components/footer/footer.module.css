@@ -1,13 +1,15 @@
 /* Footer.module.css */
 .footer {
   padding: 20px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--primary-text-color);
+  box-shadow: 0 0 16px var(--shadow);
 }
 
 .footerSections {
   display: flex;
   justify-content: space-between;
+
 }
 
 .footerSection {
@@ -17,10 +19,11 @@
 
 .footerSection ul {
   list-style: none;
+  padding: 0;
 }
 
 .footerSection li {
-  margin-bottom: 10px;
+  margin: 0.5rem 0;
 }
 
 .footerSection h4 {
@@ -30,8 +33,4 @@
 .copyright {
   text-align: center;
   margin-top: 20px; /* Add some space above the copyright notice */
-}
-
-.icon {
-  margin-right: 10px;
 }

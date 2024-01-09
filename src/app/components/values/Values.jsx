@@ -22,10 +22,10 @@ function Values() {
   return (
     <div className={styles.section} id='values'>
       <h2>Who We Are</h2>
-      <p>
+      <label className={styles.statement}>
         Imperial Contracting Ottawa success is grounded on the belief and in strict adherence to
         the highest core values established in over 35 years of business
-      </p>
+      </label>
       <div className={styles.container}>
         <div className={`${styles.flip_card} ${flippedCards.includes(0) ? styles.flipped : ''}`} onClick={() => handleCardClick(0)}>
           <div className={styles.flip_card_inner}>
@@ -36,7 +36,9 @@ function Values() {
             </div>
             <div className={styles.flip_card_back}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum dolor error alias pariatur nemo iure animi aliquid magnam corporis! Dolorum optio, quisquam eum odit at quos laudantium distinctio voluptatum.
+              At Imperial Contracting Ottawa, integrity is the cornerstone of our business. We hold ourselves to the highest standards of honesty, transparency, 
+              and ethical conduct in every interaction. Trust is earned, and we are committed to earning and maintaining your trust by consistently 
+              delivering on our promises with integrity at the core of all our endeavors.
               </p>
             </div>
           </div>
@@ -50,7 +52,9 @@ function Values() {
             </div>
             <div className={styles.flip_card_back}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum dolor error alias pariatur nemo iure animi aliquid magnam corporis! Dolorum optio, quisquam eum odit at quos laudantium distinctio voluptatum.
+              Striving for excellence is not just a goal; it's our standard. At Imperial Contracting Ottawa, we are dedicated to delivering top-tier craftsmanship, unparalleled 
+              quality, and meticulous attention to detail in every project we undertake. Our commitment to excellence ensures that your vision is not only met but 
+              exceeded, setting us apart as a reliable partner in bringing your projects to fruition.
               </p>
             </div>
           </div>
@@ -64,7 +68,9 @@ function Values() {
             </div>
             <div className={styles.flip_card_back}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum dolor error alias pariatur nemo iure animi aliquid magnam corporis! Dolorum optio, quisquam eum odit at quos laudantium distinctio voluptatum.
+              With years of hands-on experience and a wealth of industry knowledge, Imperial Contracting Ottawa stands as a seasoned expert in the contracting field. Our team brings a depth of 
+              understanding and skill to every project, ensuring smooth execution and delivering results that reflect our rich history of successful undertakings. Trust in our experience 
+              to bring your visions to life with efficiency and expertise.
               </p>
             </div>
           </div>

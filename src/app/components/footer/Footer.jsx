@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './Footer.module.css';
+import styles from './footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
@@ -29,17 +29,22 @@ function Footer() {
         </div>
         <div className={styles.footerSection}>
           <h4>Follow Us</h4>
-          <Link href="https://www.instagram.com/yourusername/" className={styles.social_link}>
-            <FontAwesomeIcon icon={faInstagram} size="3x" className={styles.icon} />
-          </Link>
-          <br />
-          <Link href="https://www.facebook.com/yourusername/" className={styles.social_link}>
-            <FontAwesomeIcon icon={faFacebook} size="3x" className={styles.icon} />
-          </Link>
+          <ul>
+            <li>
+              <Link href="https://www.instagram.com/yourusername/" className={styles.social_link}>
+                <FontAwesomeIcon icon={faInstagram} size="3x" className={styles.icon} />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.facebook.com/yourusername/" className={styles.social_link}>
+                <FontAwesomeIcon icon={faFacebook} size="3x" className={styles.icon} />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className={styles.copyright}>
-        &copy; {year} Your Company Name. All rights reserved.
+        &copy; {year} Imperial Contracting Ottawa. All rights reserved.
       </div>
     </footer>
   );

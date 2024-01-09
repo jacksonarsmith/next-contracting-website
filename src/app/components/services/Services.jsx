@@ -15,39 +15,41 @@ export default function Services() {
     return (
         <div className={styles.container} id='services'>
             <div className={styles.gridContent}> 
+                <div className={styles.quote}>
+                    <h2>" Your single source General Contract Specialist."</h2>
+                </div>
                 <div className={styles.services}>
                     <h2 className={styles.serviceTitle}>Full Home Renovations</h2>
                     <div className={styles.line}></div>
                     <p>Elevate Your Vision with Our Comprehensive Design-Build Services: Unleashing the Power of 3D Design, Expert Material Selection, and Precision Architectural Construction Planning.</p>
-                    <div className={styles.interior}>
-                        <h2>Interior</h2>
-                        <ul>
-                            <li>Kitchens</li>
-                            <li>Bathrooms</li>
-                            <li>Basements</li>
-                        </ul>
-                        <ul>
-                            <li>Flooring</li>
-                            <li>Windows</li>
-                            <li>Additions</li>
-                        </ul>
+                    <div className={styles.list}>
+                        <div className={styles.interior}>
+                            <h2>Interior</h2>
+                            <ul>
+                                <li>Kitchens</li>
+                                <li>Bathrooms</li>
+                                <li>Basements</li>
+                            </ul>
+                            <ul>
+                                <li>Flooring</li>
+                                <li>Windows</li>
+                                <li>Additions</li>
+                            </ul>
+                        </div>
+                        <div className={styles.exterior}>
+                            <h2>Exterior</h2>
+                            <ul>
+                                <li>Excavation</li>
+                                <li>Concrete</li>
+                                <li>Lockstone</li>
+                            </ul>
+                            <ul>
+                                <li>Paving</li>
+                                <li>Landscaping</li>
+                                <li>Roofing & Decking</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className={styles.exterior}>
-                        <h2>Exterior</h2>
-                        <ul>
-                            <li>Excavation</li>
-                            <li>Concrete</li>
-                            <li>Lockstone</li>
-                        </ul>
-                        <ul>
-                            <li>Paving</li>
-                            <li>Landscaping</li>
-                            <li>Roofing & Decking</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className={styles.quote}>
-                    <h2>"Your single source General Contract specialist."</h2>
                 </div>
             </div>
             <br />
