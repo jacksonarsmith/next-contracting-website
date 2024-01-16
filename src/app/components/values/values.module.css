@@ -160,3 +160,21 @@
         gap: 5rem;
     }
 }
+
+@media (min-width: 927px) and (max-width: 1600px) {
+    /* Add the styles you want to apply between 927px and 1440px screen widths here */
+
+    .section hr {
+        width: 50vw;
+        margin: 0 0 0 2rem;
+    }
+
+    .statement {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .flip_card_back p {
+        font-size: 16px;
+    }
+}

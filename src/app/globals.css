@@ -26,6 +26,12 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 926px) {
+    body {
+      overflow-x: hidden;
+    }
+}
+
 @media (prefers-color-scheme: light) {
   html {
     color-scheme: light;

@@ -24,6 +24,7 @@
     border-radius: 0.5rem;
     color: var(--primary-primary-color);
     height: 67.5vh;
+    max-width: 100%;
     width: 50vw;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
@@ -85,4 +86,10 @@
       padding: 0.5rem 0.5rem;
       font-size: 11px; /* Make the button text smaller */
     }
+}
+
+@media (min-width: 927px) and (max-width: 1440px) {
+  .block p {
+      font-size: 19px; /* Adjust as needed */
+  }
 }
