@@ -53,7 +53,7 @@ function Values() {
             </div>
             <div className={styles.flip_card_back}>
               <p>
-              Striving for excellence is not just a goal; it's our standard. At Imperial Contracting Ottawa, we are dedicated to delivering top-tier craftsmanship, unparalleled 
+              Striving for excellence is not just a goal; it`&apos;`s our standard. At Imperial Contracting Ottawa, we are dedicated to delivering top-tier craftsmanship, unparalleled 
               quality, and meticulous attention to detail in every project we undertake. Our commitment to excellence ensures that your vision is not only met but 
               exceeded, setting us apart as a reliable partner in bringing your projects to fruition.
               </p>
