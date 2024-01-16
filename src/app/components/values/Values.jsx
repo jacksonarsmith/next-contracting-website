@@ -22,6 +22,7 @@ function Values() {
   return (
     <div className={styles.section} id='values'>
       <h2>Who We Are</h2>
+      <hr />
       <label className={styles.statement}>
         Imperial Contracting Ottawa success is grounded on the belief and in strict adherence to
         the highest core values established in over 35 years of business

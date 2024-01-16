@@ -10,8 +10,10 @@
 .image {
     position: relative;
     width: 75vw;
-    height: 100vh;
-    box-shadow: 0 0 32px var(--shadow);
+    height: 90vh;
+    box-shadow: 0 0 2rem var(--shadow);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .block {
@@ -19,21 +21,68 @@
     left: -10rem; /* Add this line */
     z-index: 1; /* Add this line */
     padding: 2rem;
+    border-radius: 0.5rem;
     color: var(--primary-primary-color);
-    height: 50vh;
-    width: 25vw;
+    height: 67.5vh;
+    width: 50vw;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     font-size: 24px;
     box-shadow: -2px 0 16px var(--primary-background-color), 8px 0 32px var(--shadow);
 }
 
-.block p {
-    padding-top: 2rem;
+.block hr {
+    margin-bottom: 0.5rem;
 }
 
-.line {
-    height: 0.5vh;
-    width: 15vw;
-    background-color: var(--primary-color);
+.block button {
+    padding: 1rem 1rem;
+    margin: 2rem 0 0 0;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary-button-color);
+    color: var(--primary-background-color);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 2rem var(--shadow);
+}
+
+.block button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 926px) {
+    .container {
+      box-shadow: 0 0 2rem var(--shadow);
+      flex-direction: row;
+      padding: 0;
+    }
+  
+    .image {
+      width: 60%; /* Set the width to 50% */
+      height: 44.5vh;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .block {
+      left: 0; /* Reset the left property */
+      width: 40%; /* Set the width to 50% */
+      height: 41.1vh;
+      padding: 1rem;
+      font-size: 16px; /* Make the text smaller */
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .block p {
+      font-size: 11px;
+    }
+  
+    .block button {
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.5rem;
+      font-size: 11px; /* Make the button text smaller */
+    }
 }

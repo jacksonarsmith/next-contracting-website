@@ -17,22 +17,17 @@
     margin-bottom: 2rem 0;
 }
 
-.quote {
-    /* Add styles for the quote div here */
-    display: flex;
+.gridContent h1 {
+    font-size:  60px;
+    font-weight: 700;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 32px var(--shadow);
-    padding: 2rem;
-    margin: 2rem auto 10rem auto;
-    height: 5vh;
-    font-family: 'Brush Script MT', 'Brush Script Std', cursive; /* Update this line */
 }
 
-.quote h2 {
-    font-size: 60px;
-    font-weight: 700px;
+.gridContent hr {
+    margin: 0 auto;
+    width: 25vw;
+    height: 0.2vh;
+    background-color: var(--shadow);
 }
 
 .content {
@@ -65,17 +60,22 @@
     background-color: var(--primary-color);
     width: 65vw;
     box-shadow: 0 0 32px var(--shadow);
+    margin-top: 4rem;
+    border-radius: 0.5rem;
 }
 
 .services h2 {
     font-size: 36px;
     font-weight: 700px;
-    padding: 2rem;
-
+    padding: 0.5rem 0 0.5rem 2rem;
 }
 
-.services p, .services ul {
-    padding: 2rem;
+.services p {
+    padding: 0.5rem 0 0 2rem;
+    font-size: 20px;
+}
+
+.services ul {
     font-size: 20px;
 }
 
@@ -150,5 +150,66 @@
     height: 0.5vh;
     width: 25vw;
     background-color: var(--shadow);
-    margin-left: 1rem;
+    margin-left: 2rem;
+}
+
+@media (max-width: 926px) {
+    .content {
+      grid-template-columns: repeat(1, 1fr); /* Update this line */
+      margin-top: 5rem;
+    }
+
+    .content h2 {
+        font-size: 36px;
+    }
+
+    .content hr {
+        margin: 0.5rem;
+        width: 65vw;
+    }
+  
+    .service {
+      margin: 1rem;
+      box-shadow: 0 0 16px var(--shadow);
+    }
+  
+    .services {
+      width: 100vw; /* Update this line */
+      border-radius: 0;
+    }
+
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .list h2 {
+        font-size: 20px;
+    }
+  
+    .imageContainer:hover {
+      transform: none; /* Disable zoom on hover */
+    }
+
+    .interior, .exterior {
+        display: block; /* Stack the items vertically */
+        padding: 0;
+        margin: 0;
+    }
+
+    .interior h2, .exterior h2 {
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .interior ul, .exterior ul {
+        text-align: center;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list {
+        flex-direction: column; /* Stack the items vertically */
+        gap: 0;
+    }
 }

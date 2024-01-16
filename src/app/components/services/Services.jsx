@@ -15,13 +15,13 @@ export default function Services() {
     return (
         <div className={styles.container} id='services'>
             <div className={styles.gridContent}> 
-                <div className={styles.quote}>
-                    <h2>" Your single source General Contract Specialist."</h2>
-                </div>
+                <h1>Services</h1>
+                <hr />
+                <br />
                 <div className={styles.services}>
                     <h2 className={styles.serviceTitle}>Full Home Renovations</h2>
                     <div className={styles.line}></div>
-                    <p>Elevate Your Vision with Our Comprehensive Design-Build Services: Unleashing the Power of 3D Design, Expert Material Selection, and Precision Architectural Construction Planning.</p>
+                    <p>Elevate Your Vision with Our Comprehensive Design-Build Services: Unleashing the Power of 3D Design, Expert Material Selection, and Precision Architectural Construction Planning. Below are a list of services for full home renovations we offer:</p>
                     <div className={styles.list}>
                         <div className={styles.interior}>
                             <h2>Interior</h2>
@@ -54,6 +54,8 @@ export default function Services() {
             </div>
             <br />
             <div className={styles.content}>
+                <h2>Project Gallery</h2>
+                <hr />
                 {services.map((service, index) => (
                     <div key={index} className={styles.service}>
                         <div className={styles.imageContainer}>

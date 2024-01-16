@@ -26,6 +26,10 @@
     color: var(--primary-background-color);
 }
 
+.section hr {
+    width: 100vw;
+}
+
 .line_light {
     height: 0.5vh;
     width: 15vw;
@@ -108,4 +112,51 @@
     align-items: center;
     transform: rotateY(180deg);
     padding: 1rem;
+}
+
+@media (max-width: 926px) {
+    .section {
+        text-align: center;
+    }
+  
+    .section h2 {
+      font-size: 48px; /* Reduce font size */
+      margin-bottom: 1rem; /* Reduce margin */
+    }
+
+    .statement {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .section hr {
+        width: 80vw;
+    }
+  
+    .flip_card_back p {
+      font-size: 14px; /* Reduce font size */
+    }
+  
+    .section h3 {
+      font-size: 24px; /* Reduce font size */
+    }
+  
+    .line_light {
+      width: 25vw; /* Increase width */
+    }
+  
+    .flip_card {
+        height: 25vh; /* Reduce the height of the flip card */
+        width: 60vw; /* Increase the width of the flip card */
+        padding: 0;
+    }
+    
+    .flip_card_front, .flip_card_back {
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Corrected this line */
+        gap: 5rem;
+    }
 }
