@@ -53,9 +53,8 @@ export default function Services() {
                 </div>
             </div>
             <br />
+            <p>Take a look at some of our work below!</p>
             <div className={styles.content}>
-                <h2>Project Gallery</h2>
-                <hr />
                 {services.map((service, index) => (
                     <div key={index} className={styles.service}>
                         <div className={styles.imageContainer}>
