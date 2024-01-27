@@ -6,11 +6,15 @@ import Values from './components/values/Values'
 import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Head from 'next/head'
 
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <Nav />
       <Mission />
       <Values />

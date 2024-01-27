@@ -53,6 +53,7 @@
     transition: all 0.3s ease-in-out;
 }
 
+
 @media (max-width: 768px) {
     .container {
       box-shadow: 0 0 2rem var(--shadow);
@@ -85,5 +86,33 @@
       margin: 0.5rem 0;
       padding: 0.5rem 0.5rem;
       font-size: 11px; /* Make the button text smaller */
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .block p {
+        font-size: 11px;
+    }
+  }
+
+@media screen and (max-width: 414px) {
+    .block p {
+        font-size: 10px;
+    }
+
+    .block button {
+        margin-top: 1rem;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+   .block p {
+        font-size: 9.5px;
+    }
+
+    .block button {
+        margin-top: 0.5rem;
+        font-size: 9.5px;
     }
 }
