@@ -162,7 +162,7 @@
 }
 
 @media (min-width: 927px) and (max-width: 1600px) {
-    /* Add the styles you want to apply between 927px and 1440px screen widths here */
+    /* Add the styles you want to apply between 927px and 1920px screen widths here */
 
     .section hr {
         width: 50vw;

@@ -53,6 +53,11 @@
     transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 1920px) {
+    .block p {
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 768px) {
     .container {
@@ -93,7 +98,17 @@
     .block p {
         font-size: 11px;
     }
-  }
+}
+
+@media screen and (max-width: 428px) {
+    .block p {
+        font-size: 10px;
+    }
+
+    .block button {
+        font-size: 10px;
+    }
+}
 
 @media screen and (max-width: 414px) {
     .block p {
