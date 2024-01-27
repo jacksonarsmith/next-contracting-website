@@ -53,7 +53,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 926px) {
+@media (max-width: 768px) {
     .container {
       box-shadow: 0 0 2rem var(--shadow);
       flex-direction: row;
@@ -78,7 +78,7 @@
     }
   
     .block p {
-      font-size: 11px;
+      font-size: 13px;
     }
   
     .block button {
@@ -86,10 +86,4 @@
       padding: 0.5rem 0.5rem;
       font-size: 11px; /* Make the button text smaller */
     }
-}
-
-@media (min-width: 927px) and (max-width: 1440px) {
-  .block p {
-      font-size: 19px; /* Adjust as needed */
-  }
 }
