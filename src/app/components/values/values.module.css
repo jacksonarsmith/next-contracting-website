@@ -125,6 +125,7 @@
     }
 
     .statement {
+        text-align: center;
         font-size: 16px;
         padding: 1rem;
     }
@@ -134,7 +135,7 @@
     }
   
     .flip_card_back p {
-      font-size: 14px; /* Reduce font size */
+      font-size: 1.1vw; /* Reduce font size */
     }
   
     .section h3 {
