@@ -25,24 +25,25 @@
 }
 
 .overlay h1 {
-    font-size: 48px;
+    font-size: 2.4vw;
     font-weight: 700px;
     color: var(--primary-text-color);
 }
 
 .overlay p {
-    font-size: 24px;
+    padding-top: 1rem;
+    font-size: 1.3vw;
     color: var(--primary-text-color);
 }
 
 .overlay button {
-    padding: 1rem 1rem;
+    padding: 1rem;
     margin: 1rem;
     border: none;
     border-radius: 0.5rem;
     background-color: var(--primary-button-color);
     color: var(--primary-background-color);
-    font-size: 24px;
+    font-size: 1.3vw;
     cursor: pointer;
     box-shadow: 0 0 1rem var(--shadow);
 }
@@ -54,34 +55,30 @@
 }
 
 /* Add this media query for screens smaller than 768px */
-@media (max-width: 926px) {
-    .overlay h1 {
-        font-size: 32px; /* Smaller font size */
-    }
-
+@media (max-width: 768px) {
     .image {
-        height: 50%;
+        height: 75vw;
         width: 100vw;
     }
 
     .overlay {
-        height: 20%;
-        left: 50%; /* Center the overlay horizontally */
-        transform: translate(-50%, -180%); /* Center the overlay vertically */
+        height: 17.5%;
+        left: 50%;
+        transform: translate(-50%, -180%); 
         box-shadow: 0 0 1rem var(--primary-color);
-        width: 75%; /* Make the overlay fit the screen */
+        width: 75%; 
     }
 
     .overlay h1 {
-        font-size: 24px; /* Smaller font size */
+        font-size: 5vw;
     }
 
     .overlay p {
-        font-size: 14px; /* Smaller font size */
+        font-size: 3vw;
     }
 
     .overlay button {
-        font-size: 14px; /* Smaller font size */
-        width: 50%;
+        font-size: 3vw;
+        padding: 0.5rem;
     }
 }
