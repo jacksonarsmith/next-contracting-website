@@ -116,7 +116,7 @@
     padding: 1rem;
 }
 
-@media (max-width: 926px) {
+@media (max-width: 768px) {
     .section {
         text-align: center;
     }
@@ -133,11 +133,13 @@
     }
 
     .section hr {
-        width: 80vw;
+        width: 50vw;
+        margin: 0 0 0 2rem;
     }
   
     .flip_card_back p {
-      font-size: 1.1vw; /* Reduce font size */
+      font-size: 2.8vw; /* Reduce font size */
+      padding: 0 1rem;
     }
   
     .section h3 {
@@ -162,21 +164,5 @@
         grid-template-columns: 1fr; /* Corrected this line */
         gap: 5rem;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .section hr {
-        width: 50vw;
-        margin: 0 0 0 2rem;
-    }
-
-    .statement {
-        text-align: center;
-        padding: 2rem 0;
-    }
-
-    .flip_card_back p {
-        font-size: 1.1vw;
-    }
 }
