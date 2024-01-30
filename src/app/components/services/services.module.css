@@ -154,6 +154,11 @@
     opacity: 1;
 }
 
+.image {
+    width: 20vw;
+    height: 30vh;
+}
+
 @media (max-width: 768px) {
     .content {
       grid-template-columns: repeat(1, 1fr); /* Update this line */
