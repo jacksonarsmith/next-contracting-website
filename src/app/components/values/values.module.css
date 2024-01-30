@@ -161,8 +161,7 @@
     }
 }
 
-@media (min-width: 927px) and (max-width: 1600px) {
-    /* Add the styles you want to apply between 927px and 1920px screen widths here */
+@media screen and (max-width: 1440px) {
 
     .section hr {
         width: 50vw;
@@ -175,6 +174,6 @@
     }
 
     .flip_card_back p {
-        font-size: 16px;
+        font-size: 1.1vw;
     }
 }

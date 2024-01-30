@@ -33,7 +33,7 @@
 }
 
 .block p {
-  font-size: 23px;
+  font-size: 1.2vw;
 }
 
 .block hr {
@@ -47,7 +47,7 @@
     border-radius: 0.5rem;
     background-color: var(--primary-button-color);
     color: var(--primary-background-color);
-    font-size: 20px;
+    font-size: 1.2vw;
     cursor: pointer;
     box-shadow: 0 0 2rem var(--shadow);
 }
@@ -57,7 +57,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
     .container {
       box-shadow: 0 0 2rem var(--shadow);
       flex-direction: row;
@@ -82,50 +82,14 @@
     }
   
     .block p {
-      font-size: 13px;
+      font-size: 1vw;
     }
   
     .block button {
       margin: 0.5rem 0;
       padding: 0.5rem 0.5rem;
-      font-size: 11px; /* Make the button text smaller */
+      font-size: 1vw; /* Make the button text smaller */
     }
 }
 
-@media screen and (max-width: 430px) {
-    .block p {
-        font-size: 11px;
-    }
-}
 
-@media screen and (max-width: 428px) {
-    .block p {
-        font-size: 10px;
-    }
-
-    .block button {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .block p {
-        font-size: 10px;
-    }
-
-    .block button {
-        margin-top: 1rem;
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 391px) {
-   .block p {
-        font-size: 9.5px;
-    }
-
-    .block button {
-        margin-top: 0.5rem;
-        font-size: 9.5px;
-    }
-}
