@@ -16,7 +16,7 @@ const Contact = () => {
       <h2 className={styles.heading}>Contact Us</h2>
       <hr />
       <p className={styles.subheading}>
-        We offer full home renovations to our clients. Whether you &apos; re looking to remodel your kitchen, bathroom, or any other part of your home, our experienced team is here to help. Contact us today to discuss your project and get a free consultation.
+        We offer full home renovations to our clients. Whether you&apos;re looking to remodel your kitchen, bathroom, or any other part of your home, our experienced team is here to help. Contact us today to discuss your project and get a free consultation.
       </p>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form} id='contact'>
         <div style={{ marginTop: '2rem' }}>

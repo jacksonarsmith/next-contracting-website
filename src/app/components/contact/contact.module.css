@@ -89,9 +89,9 @@
 
 .subheading {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.2vw;
   margin: 2rem auto; 
-  max-width: 50vw;
+  max-width: 35vw;
 }
 
 @media (max-width: 926px) {
@@ -135,7 +135,7 @@
   }
 
   .subheading {
-    font-size: 18px; /* Reduce the font size */
+    font-size: 3vw; /* Reduce the font size */
     max-width: 90vw; /* Increase the width of the subheading */
   }
 }
