@@ -8,7 +8,7 @@
 }
 
 .container h2 {
-    font-size: 7vw;
+    font-size: 3.5vw;
     font-weight: 700;
     color: var(--primary-primary-color);
 }
@@ -23,9 +23,9 @@
 }
 
 .block {
-    position: relative; /* Add this line */
-    left: -10rem; /* Add this line */
-    z-index: 1; /* Add this line */
+    position: relative; 
+    left: -10rem; 
+    z-index: 1; 
     padding: 2rem;
     border-radius: 0.5rem;
     color: var(--primary-primary-color);
@@ -40,26 +40,26 @@
 
 .block p {
     padding: 0.5rem 0;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 .block hr {
     margin-bottom: 0.5rem;
     border: none;
     height: 0.2vh;
-    width: 35vw;
+    width: 20vw;
     background-color: var(--shadow);
     box-shadow: 0 0 0.2rem var(--shadow);
 }
 
 .block button {
     padding: 1rem 1rem;
-    margin: 0.5rem 0 0 0;
+    margin: 1.5rem 0;
     border: none;
     border-radius: 0.5rem;
     background-color: var(--primary-button-color);
     color: var(--primary-background-color);
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     cursor: pointer;
     box-shadow: 0 0 2rem var(--shadow);
 }
@@ -74,6 +74,10 @@
       box-shadow: 0 0 2rem var(--shadow);
       flex-direction: row;
       padding: 0;
+    }
+
+    .container h2 {
+        font-size: 7vw;
     }
   
     .image {
