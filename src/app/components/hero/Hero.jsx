@@ -1,6 +1,11 @@
 import styles from '@/app/components/hero/hero.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Metadata } from 'next'
+ 
+export const metadata = {
+  viewport: 'width=device-width, initial-scale=1',
+}
 
 function Hero() {
   return (
