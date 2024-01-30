@@ -40,7 +40,7 @@
 
 .block p {
     padding: 1rem 0;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 .block hr {
@@ -59,7 +59,7 @@
     border-radius: 0.5rem;
     background-color: var(--primary-button-color);
     color: var(--primary-background-color);
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     cursor: pointer;
     box-shadow: 0 0 2rem var(--shadow);
 }
