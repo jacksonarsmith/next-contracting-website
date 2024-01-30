@@ -42,7 +42,7 @@
 
 .block button {
     padding: 1rem 1rem;
-    margin: 2rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     border: none;
     border-radius: 0.5rem;
     background-color: var(--primary-button-color);
@@ -86,9 +86,7 @@
     }
   
     .block button {
-      margin: 0.5rem 0;
-      padding: 0.5rem 0.5rem;
-      font-size: 1vw; /* Make the button text smaller */
+      font-size: 1vw;
     }
 }
 
