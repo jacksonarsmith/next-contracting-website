@@ -20,7 +20,6 @@ export default function Services() {
                 <br />
                 <div className={styles.services}>
                     <h2 className={styles.serviceTitle}>Full Home Renovations</h2>
-                    <hr />
                     <p>Elevate Your Vision with Our Comprehensive Design-Build Services: Unleashing the Power of 3D Design, Expert Material Selection, and Precision Architectural Construction Planning. Below are a list of services for full home renovations we offer:</p>
                     <div className={styles.list}>
                         <div className={styles.interior}>

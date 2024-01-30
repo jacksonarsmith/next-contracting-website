@@ -8,7 +8,7 @@
 }
 
 .container h2 {
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: 700;
     color: var(--primary-primary-color);
 }
@@ -39,8 +39,8 @@
 }
 
 .block p {
-    padding: 0.5rem 0;
-    font-size: 1.1vw;
+    padding: 1rem 0;
+    font-size: 1.2vw;
 }
 
 .block hr {
@@ -59,7 +59,7 @@
     border-radius: 0.5rem;
     background-color: var(--primary-button-color);
     color: var(--primary-background-color);
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     cursor: pointer;
     box-shadow: 0 0 2rem var(--shadow);
 }

@@ -12,9 +12,22 @@
 }
 
 .section h2 {
-    font-size: 96px;
+    font-size: 60px;
     font-weight: 700px;
-    margin-bottom: 2rem;
+}
+
+.section hr {
+    height: 0.2vh;
+    width: 35vw;
+    background-color: var(--shadow);
+    box-shadow: 0 0 0.2rem var(--shadow);
+    margin: 1rem auto 3rem auto;
+    border: none;
+
+}
+
+.section label {
+    margin: 2rem auto;
 }
 
 .flip_card_back p {
@@ -25,10 +38,6 @@
     font-size: 36px;
     font-weight: 700px;
     color: var(--primary-background-color);
-}
-
-.section hr {
-    width: 100vw;
 }
 
 .line_light {

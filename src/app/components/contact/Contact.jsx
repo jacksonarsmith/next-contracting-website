@@ -12,9 +12,9 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <h2 className={styles.heading}>Contact Us</h2>
-      <div className={styles.line}></div>
+      <hr />
       <p className={styles.subheading}>
         We offer full home renovations to our clients. Whether you &apos; re looking to remodel your kitchen, bathroom, or any other part of your home, our experienced team is here to help. Contact us today to discuss your project and get a free consultation.
       </p>

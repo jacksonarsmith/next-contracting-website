@@ -67,6 +67,7 @@
     width: 65vw;
     box-shadow: 0 0 32px var(--shadow);
     margin-top: 4rem;
+    padding: 0.5rem 2rem;
     border-radius: 0.5rem;
 }
 
@@ -150,13 +151,6 @@
 
 .imageContainer:hover .serviceName {
     opacity: 1;
-}
-
-.line {
-    height: 0.5vh;
-    width: 25vw;
-    background-color: var(--shadow);
-    margin-left: 2rem;
 }
 
 @media (max-width: 768px) {
