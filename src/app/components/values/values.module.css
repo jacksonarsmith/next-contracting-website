@@ -5,6 +5,7 @@
     background-color: var(--primary-background-color);
     place-items: center;
     place-content: center;
+    text-align: center;
     display: grid;
     padding: 3rem 0;
     margin: 5rem 0;
@@ -17,7 +18,7 @@
 }
 
 .flip_card_back p {
-    font-size: 18px;
+    font-size: 1.1vw;
 }
 
 .section h3 {
