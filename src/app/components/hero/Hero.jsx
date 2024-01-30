@@ -15,7 +15,6 @@ function Hero() {
           With a commitment to quality craftsmanship, we transform houses into dream homes. Take the first step with a free 
           consultation, and let us bring your vision to life.
         </p>
-        <br />
         <p>
           We provide construction management, general contracting and 
           design-build services on projects small and large for a diverse group of customers. We constantly achieve success 
