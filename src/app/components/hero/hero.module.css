@@ -106,4 +106,16 @@
     }
 }
 
+@media screen and (max-width: 377px) {
+    .block p {
+        font-size: 2vw;
+        padding: 0.3rem 0;
+    }
+
+    .block button {
+        font-size: 2vw;
+        margin: 0.3rem 0 ;
+    }
+}
+
 

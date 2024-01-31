@@ -83,3 +83,26 @@
         padding: 0.5rem;
     }
 }
+
+@media screen and (max-width: 377px) {
+    .overlay {
+        height: 20%;
+        left: 50%;
+        transform: translate(-50%, -135%); 
+        box-shadow: 0 0 1rem var(--primary-color);
+        width: 75%; 
+    }
+
+    .overlay h1 {
+        font-size: 5vw;
+    }
+
+    .overlay p {
+        font-size: 3vw;
+    }
+
+    .overlay button {
+        font-size: 3vw;
+        padding: 0.5rem;
+    }
+}
