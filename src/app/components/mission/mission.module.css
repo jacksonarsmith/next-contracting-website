@@ -84,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 677px) {
     .overlay {
         height: 20%;
         left: 50%;
